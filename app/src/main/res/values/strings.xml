@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+    <string name="sundar_pichai">Sundar Pichai</string>
+    <string name="sp_gmail_com">sp@gmail.com</string>
+    <string name="inbox">Inbox</string>
+    <string name="starred">Starred</string>
+    <string name="sent">Sent</string>
+    <string name="drafts">Drafts</string>
+    <string name="subheader">Subheader</string>
+    <string name="all_mail">All Mail</string>
+    <string name="trash">Trash</string>
+    <string name="spam">Spam</string>
+    <string name="open_drawer"> Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+</resources>
