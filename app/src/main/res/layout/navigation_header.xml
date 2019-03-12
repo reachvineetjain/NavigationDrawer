@@ -17,6 +17,7 @@
         app:civ_border_width="2dp"
         app:civ_border_color="#FFFFFF"
         android:contentDescription="@string/sundar_pichai"
+        android:id="@+id/circleViewImg"
         />
 
     <TextView

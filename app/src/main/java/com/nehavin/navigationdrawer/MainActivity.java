@@ -9,7 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
+    CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.open_drawer, R.string.close_drawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        circleImageView = (CircleImageView) findViewById(R.id.circleViewImg);
     }
 
 
@@ -89,6 +93,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else {
             super.onBackPressed();
         }
-
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        circleImageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //        android:onClick="clickToast"
+//                Toast.makeText(MainActivity.this, "Image Clicked", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+    }
+
+    //    public void clickToast(View view)
+//    {
+//        Toast.makeText(this, "Image Clicked", Toast.LENGTH_SHORT).show();
+//    }
 }
